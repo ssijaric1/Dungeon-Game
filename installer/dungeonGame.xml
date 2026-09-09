@@ -1,0 +1,43 @@
+<?xml version='1.0'?>
+<!--
+	SetupCollector config for dungeonGame (DungeonGame).
+
+	  executableName / out folder name : dungeonGame   (must match, case included)
+	  dev                              : project folder relative to $HOME
+	  executable                       : $RAMDisk/Out/<SOLUTION_NAME>/Release
+
+	The binary links only mainUtils + natGUI, both covered by natGUIALL.
+	If ldd/otool/dumpbin ever shows another natID library, add a <Package> for it.
+-->
+<SetupCollector xmlns:win="windows" xmlns:mac="macOS" xmlns:lin="linux" executableName="dungeonGame">
+
+	<Folders dev="~natID/natID.Examples/mine/Dungeon-Game"
+			 executable="$RAMDisk/Out/dungeonGame/Release"
+			 out="$RAMDisk/Setup/dungeonGame"/>
+
+	<Packages debug="false">
+		<!-- covers mainUtils + dataProvider + natGUI -->
+		<Package name="natGUIALL"/>
+
+		<!-- GTK runtime is bundled into the Windows installer only -->
+		<Package name="GTK4" exclude="macOS,linux"/>
+	</Packages>
+
+	<ResData>
+		<Res type="folder" dev="$MyBin/GTK/release/share/glib-2.0/schemas" dep="schemas" exclude="macOS,linux"/>
+	</ResData>
+
+	<MutableResource/>
+
+	<Setup licenseFileName="~natID.SDK/DevEnv/License.txt"
+			categories="Game;Education"
+			win:programGroup="DungeonGame"
+			win:width="440"
+			win:headerBackColor="#12203A"
+			win:headerTxtColor="#40D6C8"
+			win:licenseTxtColor="#846060"
+			win:useMakeCabinet="true"
+			win:minBuildNumber="17763"
+			lin:depends="$DepGTKv4"
+			lin:icon="$HOME/natID/natID.Examples/mine/Dungeon-Game/res/appIcon/dungeonGame"/>
+</SetupCollector>

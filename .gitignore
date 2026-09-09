@@ -1,0 +1,22 @@
+# Visual Studio / VSCode
+.vscode/
+.vs/
+
+# Build folders
+Debug/
+Release/
+CMakeFiles/
+CMakeCache.txt
+
+# Compiled files
+*.ipch
+*.ilk
+*.pdb
+*.exe
+*.db
+*.suo
+*.user
+
+# CMake build trees (a committed one keeps pointing at the old SDK path)
+build/
+installer-output/

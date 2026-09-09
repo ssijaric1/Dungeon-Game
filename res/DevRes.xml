@@ -1,0 +1,30 @@
+<?xml version='1.0'?>
+<DevRes version="2024.07.16"
+		regionals="Common/Regionals"
+		displayName="DungeonGame"
+		maintainer="Sehzada Sijaric"
+		email="sehyworkacc@gmail.com"
+		homePage="https://github.com/ssijaric1/dungeonGame"
+		majorVersion="1"
+		minorVersion="0"
+		versionDate="2026-09-08"
+		comment="Dungeon pathfinding game built on the natID SDK">
+	<Langs>
+		<Lang id="EN" name="English"/>
+		<Lang id="BA" name="Bosanski (Bosnian)"/>
+		<Lang id="DE" name="Deutsch (German)"/>
+		<Lang id="FR" name="Français (Frensh)"/>
+		<Lang id="ES" name="Español (Spanish)"/>
+		<Lang id="RU" name="Pусский (Russian)"/>
+		<Lang id="TR" name="Türkçe (Turkish)"/>
+		<Lang id="ZH" name="中文 (Chinese)"/>
+	</Langs>
+	<ArtWork>
+		<Config path="Common/ResConfigs/natGUI.xml"/>
+		<Config path=":main.xml"/>
+	</ArtWork>
+	<Translation>
+		<Config path="Common/ResConfigs/tr/%s/natGUI.xml"/>
+		<Config path=":tr/main_%s.xml"/>
+	</Translation>
+</DevRes>
