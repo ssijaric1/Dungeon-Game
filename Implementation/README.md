@@ -56,7 +56,7 @@ walked one expansion at a time.
 ## Installing
 
 Prebuilt installers for Windows, macOS and Linux are on the
-[releases page](https://github.com/ssijaric1/Dungeon-Game/releases).
+[releases page](https://github.com/ssijaric1/ProjAI_DungeonG_Piralic_Smjecanin_Sijaric_/releases).
 
 | Platform | File | Install |
 |---|---|---|

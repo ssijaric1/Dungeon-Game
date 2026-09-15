@@ -11,7 +11,7 @@
 -->
 <SetupCollector xmlns:win="windows" xmlns:mac="macOS" xmlns:lin="linux" executableName="dungeonGame">
 
-	<Folders dev="~natID/natID.Examples/mine/Dungeon-Game"
+	<Folders dev="~natID/natID.Examples/mine/ProjAI_DungeonG_Piralic_Smjecanin_Sijaric_/Implementation"
 			 executable="$RAMDisk/Out/dungeonGame/Release"
 			 out="$RAMDisk/Setup/dungeonGame"/>
 
@@ -39,5 +39,5 @@
 			win:useMakeCabinet="true"
 			win:minBuildNumber="17763"
 			lin:depends="$DepGTKv4"
-			lin:icon="$HOME/natID/natID.Examples/mine/Dungeon-Game/res/appIcon/dungeonGame"/>
+			lin:icon="$HOME/natID/natID.Examples/mine/ProjAI_DungeonG_Piralic_Smjecanin_Sijaric_/Implementation/res/appIcon/dungeonGame"/>
 </SetupCollector>

@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Build the DungeonGame .deb installer on Linux.
 #
-#   chmod +x installer/make-linux-installer.sh && ./installer/make-linux-installer.sh
+#   chmod +x Implementation/installer/make-linux-installer.sh && ./Implementation/installer/make-linux-installer.sh
 #
 # Installs prerequisites, builds Release, sets up ~/Setups, runs SetupCollector.
 
@@ -9,10 +9,10 @@ set -euo pipefail
 
 APP="dungeonGame"                                   # GUI target name
 SOLUTION="dungeonGame"                              # SOLUTION_NAME from CMakeLists.txt
-PROJECT_REL="natID/natID.Examples/mine/Dungeon-Game"   # repo root, relative to $HOME
+PROJECT_REL="natID/natID.Examples/mine/ProjAI_DungeonG_Piralic_Smjecanin_Sijaric_"   # repo root, relative to $HOME
 REPO="$HOME/$PROJECT_REL"
-PROJECT="$REPO"                                   # repo root holds CMakeLists.txt and res/
-CONFIG="$REPO/installer/$APP.xml"
+PROJECT="$REPO/Implementation"                    # holds CMakeLists.txt and res/
+CONFIG="$PROJECT/installer/$APP.xml"
 SDK="$HOME/natID.SDK"
 UTILS="$HOME/natID.Utils"
 RAMDISK="$HOME/natID.RAMDisk"
